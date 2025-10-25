@@ -1,0 +1,35 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #222;
+  color: white;
+}
+
+.game-board {
+  width: 400px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  background-color: #444;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition: transform 0.4s;
+}
+
+.card.flip {
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(0deg);
+}
